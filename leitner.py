@@ -20,7 +20,7 @@ questionToAnswer = {}
 questionToScore = {}
 questionToWasRead = {}
 
-fichier_path = os.path.join(base_path, "questionsReponses.txt")
+fichier_path = os.path.join(base_path, "questionsAnswers.txt")
 
 with open(fichier_path, encoding="latin-1") as fichier:
     for line in fichier :
