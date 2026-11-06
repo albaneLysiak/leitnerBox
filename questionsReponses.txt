@@ -1,21 +1,21 @@
-Navigateur et explorateur portugais du 16ème et 17ème siècle/Pedro Fernando de Queiros/3/
-Joueur d'échecs ouzbek ?/Nordirbek Abdousattorov/3/
-Pâtes en colimaçon/cavatappi/2/
-Explorateur espagnol qui a étudié les aztèques au 16ème siècle/Pedro Sarmiento de Gamboa/2/
-"Garde-manger" en anglais/Pantry/2/
-Salon de thé rétro japonais/Kissaten/2/
-"Crinière" en anglais/Mane/2/
-"Sabots fendus" en anglais/Cloven hooves/2/
-Navigateur espagnol du 16ème siècle/Alvaro de Mendana/2/
-Navigateur juif espagnol du 15ème siècle/Luis de Torres/2/
-Pâtes en forme de radiateur/radiatori/2/
-Fichiers BCL/Binary Base Call ; premier type de fichier renvoyé par le séquenceur, intensité de fluorescence par base/2/
-Fichiers FASTQ/Issus des fichiers BCL, 4 lignes, identifiant du read, nucléotide, séparateur, Q score (score de qualité)/2/
-Fichiers SAM et BAM/Fichiers de sortie d'alignement/2/
-Fichiers CRAM/Fichiers où seules les différences avec le génome de référence sont stockées/2/
-Employé chargé de s'occuper des chevaux/Palefrenier/2/
-Pierre à bâtir, en général de calcaire, relativement tendre, taillée partiellement ou totalement, de dimensions et de masse qui le rendent maniable par une seule personne/Moellon/2/
-Outil de transport qui a été très utilisé depuis le Moyen Âge, particulièrement en agriculture (fourrages, terre, paille, fumier). La caisse est montée sur des roues de grand diamètre qui permettent son basculement sous l'effet du poids de la charge/Tombereau/2/
-Cnidaire bleu faisant partie du neuston, non piquante contraitement à la physalie/Vélelle/2/
-Ensemble des organismes liés à la surface de l'eau/Neuston/2/
-Capacité qu'ont certaines espèces d'émettre un signal d'avertissement clairement perceptible par de potentiels prédateurs, afin de les avertir du danger qu'elles représentent (toxicité, épines,...)/Aposématisme/0/
+Navigateur et explorateur portugais du 16ème et 17ème siècle/Pedro Fernando de Queiros/5/
+Joueur d'échecs ouzbek ?/Nordirbek Abdousattorov/5/
+Explorateur espagnol qui a étudié les aztèques au 16ème siècle/Pedro Sarmiento de Gamboa/4/
+"Garde-manger" en anglais/Pantry/4/
+Salon de thé rétro japonais/Kissaten/4/
+"Crinière" en anglais/Mane/4/
+"Sabots fendus" en anglais/Cloven hooves/4/
+Navigateur espagnol du 16ème siècle/Alvaro de Mendana/4/
+Navigateur juif espagnol du 15ème siècle/Luis de Torres/4/
+Pâtes en forme de radiateur/radiatori/4/
+Fichiers BCL/Binary Base Call ; premier type de fichier renvoyé par le séquenceur, intensité de fluorescence par base/4/
+Fichiers FASTQ/Issus des fichiers BCL, 4 lignes, identifiant du read, nucléotide, séparateur, Q score (score de qualité)/4/
+Fichiers SAM et BAM/Fichiers de sortie d'alignement/4/
+Fichiers CRAM/Fichiers où seules les différences avec le génome de référence sont stockées/4/
+Employé chargé de s'occuper des chevaux/Palefrenier/4/
+Pierre à bâtir, en général de calcaire, relativement tendre, taillée partiellement ou totalement, de dimensions et de masse qui le rendent maniable par une seule personne/Moellon/4/
+Outil de transport qui a été très utilisé depuis le Moyen Âge, particulièrement en agriculture (fourrages, terre, paille, fumier). La caisse est montée sur des roues de grand diamètre qui permettent son basculement sous l'effet du poids de la charge/Tombereau/4/
+Cnidaire bleu faisant partie du neuston, non piquante contraitement à la physalie/Vélelle/4/
+Ensemble des organismes liés à la surface de l'eau/Neuston/4/
+Capacité qu'ont certaines espèces d'émettre un signal d'avertissement clairement perceptible par de potentiels prédateurs, afin de les avertir du danger qu'elles représentent (toxicité, épines,...)/Aposématisme/2/
+Pâtes en colimaçon/cavatappi/1/

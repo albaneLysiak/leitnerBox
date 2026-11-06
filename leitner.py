@@ -8,6 +8,9 @@ Created on Sat Apr 19 23:14:28 2025
 import os
 import sys
 
+def clear_terminal() :
+    os.system("cls" if os.name == "nt" else "clear")
+
 if getattr(sys, 'frozen', False):#si le programme est frozen (exe)
     base_path = os.path.dirname(sys.executable)  # dossier de l'exe
 else:#le programme marche en python classique
@@ -47,8 +50,9 @@ for item in sortedDic :
         questionVersAEteLu[question] = True
         #for i in range(5) :
         #    print(LINE_UP, end = LINE_CLEAR)
-        clear = lambda: os.system('cls')
-        clear()
+        #clear = lambda: os.system('cls')
+        #clear()
+        clear_terminal()
 
 #On rajoute 1 à toutes les questions qui n'ont pas été vues
 for question in questionVersScore.keys() :
