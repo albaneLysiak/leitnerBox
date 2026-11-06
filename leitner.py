@@ -11,14 +11,14 @@ import sys
 def clear_terminal() :
     os.system("cls" if os.name == "nt" else "clear")
 
-if getattr(sys, 'frozen', False):#si le programme est frozen (exe)
-    base_path = os.path.dirname(sys.executable)  # dossier de l'exe
-else:#le programme marche en python classique
+if getattr(sys, 'frozen', False):#if the program is frozen (exe)
+    base_path = os.path.dirname(sys.executable)  # exe file
+else:#the program works in classic python mode
     base_path = os.path.dirname(os.path.abspath(__file__))
     
-questionVersReponse = {}
-questionVersScore = {}
-questionVersAEteLu = {}
+questionToAnswer = {}
+questionToScore = {}
+questionToWasRead = {}
 
 fichier_path = os.path.join(base_path, "questionsReponses.txt")
 
@@ -28,42 +28,38 @@ with open(fichier_path, encoding="latin-1") as fichier:
         question = line[0].encode('latin-1')
         reponse = line[1].encode('latin-1')
         score = int(line[2])
-        questionVersReponse[question] = reponse
-        questionVersScore[question] = score
-        questionVersAEteLu[question] = False
+        questionToAnswer[question] = reponse
+        questionToScore[question] = score
+        questionToWasRead[question] = False
 
-sortedDic = sorted(questionVersScore.items(), key=lambda item: item[1], reverse=True)
-#un premier tri au cas où des éléments aient été ajoutés dans le fichier entre temps
+sortedDic = sorted(questionToScore.items(), key=lambda item: item[1], reverse=True)
+#a first sorting in case elements were added to the questions and answers file between two executions
 
 for item in sortedDic :
         question = item[0]
         print(item[0].decode('utf8'))
         getAnswer = input()
-        isAnswered = input("La réponse était "+questionVersReponse[question].decode('utf8')+", bien répondu ? Indiquer o pour oui \n")
+        isAnswered = input("La réponse était "+questionToAnswer[question].decode('utf8')+", bien répondu ? Indiquer o pour oui \n")
         if isAnswered == "o" :
             nouveauScore = 0
         elif isAnswered == "exit" :
             break
         else :
-            nouveauScore = int(questionVersScore[question]) + 1
-        questionVersScore[question] = nouveauScore
-        questionVersAEteLu[question] = True
-        #for i in range(5) :
-        #    print(LINE_UP, end = LINE_CLEAR)
-        #clear = lambda: os.system('cls')
-        #clear()
+            nouveauScore = int(questionToScore[question]) + 1
+        questionToScore[question] = nouveauScore
+        questionToWasRead[question] = True
         clear_terminal()
 
-#On rajoute 1 à toutes les questions qui n'ont pas été vues
-for question in questionVersScore.keys() :
-    if questionVersAEteLu[question] == False :
-        questionVersScore[question] += 1
+#A score of 1 is added to all the questions that were not seen
+for question in questionToScore.keys() :
+    if questionToWasRead[question] == False :
+        questionToScore[question] += 1
 
-sortedDic = sorted(questionVersScore.items(), key=lambda item: item[1], reverse=True)
-#un second tri avant de réécrire
+sortedDic = sorted(questionToScore.items(), key=lambda item: item[1], reverse=True)
+#a second sorting before the rewriting
 
 with open(fichier_path, "w", encoding="latin-1") as fichier:
     for item in sortedDic :
         question = item[0]
-        line = question.decode('latin-1')+"/"+questionVersReponse[question].decode('latin-1')+"/"+str(questionVersScore[question])+"/"+"\n"
+        line = question.decode('latin-1')+"/"+questionToAnswer[question].decode('latin-1')+"/"+str(questionToScore[question])+"/"+"\n"
         fichier.write(line)
