@@ -39,8 +39,8 @@ for item in sortedDic :
         question = item[0]
         print(item[0].decode('utf8'))
         getAnswer = input()
-        isAnswered = input("La réponse était "+questionToAnswer[question].decode('utf8')+", bien répondu ? Indiquer o pour oui \n")
-        if isAnswered == "o" :
+        isAnswered = input("The answer was "+questionToAnswer[question].decode('utf8')+", did you get it right ? Indicate y pour yes \n")
+        if isAnswered == "y" :
             nouveauScore = 0
         elif isAnswered == "exit" :
             break
