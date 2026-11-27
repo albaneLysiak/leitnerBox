@@ -31,3 +31,29 @@ For each work session (and every time you launch the program) questions are prep
 3) Next question.
 
 At the end of the work session, the questions are sorted again according to their score. This way, for each work session, you always work first on the questions you failed before.
+
+==========================================================================
+
+How to run on Windows
+
+On Windows, it is preferable to use the exe file (dist folder). A terminal is going to open, allowing the Leitner Box to be used.
+
+==========================================================================
+
+How to run on Linux
+
+Use the .py file with a Python IDE. The program will work in terminal mode.
+
+==========================================================================
+
+Important : the questionsAswers text file.
+
+This file must remain in the same directory than the exe or py file, depending of the one you use.
+
+When you want to add another card to the box, add a line with the following format :
+Question/Answer/0/
+
+For example :
+Who was the first french president ?/Louis-Napoléon Bonaparte/0/
+
+A score of 0 indicates that this is a new question you don't master yet. The highest priority will be given to cards with a score of 0.
