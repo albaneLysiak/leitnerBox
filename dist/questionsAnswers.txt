@@ -1,5 +1,5 @@
-Who was the first woman to win a Nobel Prize in 1903 ?/Marie Curie/0/
-In what year did the Berlin wall fall ?/1989/0/
-What is the smallest planet of the solar system ?/Mercury/0/
-What is the capital city of India ?/New Dehli/0/
-In Greek mythology, who is considered the messenger of the gods ?/Hermes/0/
+Who was the first woman to win a Nobel Prize in 1903 ?/Marie Curie/1/
+In what year did the Berlin wall fall ?/1989/1/
+What is the smallest planet of the solar system ?/Mercury/1/
+What is the capital city of India ?/New Dehli/1/
+In Greek mythology, who is considered the messenger of the gods ?/Hermes/1/

@@ -39,7 +39,7 @@ for item in sortedDic :
         question = item[0]
         print(item[0].decode('utf8'))
         getAnswer = input()
-        isAnswered = input("The answer was "+questionToAnswer[question].decode('utf8')+", did you get it right ? Indicate y pour yes \n")
+        isAnswered = input("The answer was "+questionToAnswer[question].decode('utf8')+", did you get it right ? Indicate y for yes \n")
         if isAnswered == "y" :
             nouveauScore = 0
         elif isAnswered == "exit" :
